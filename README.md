@@ -197,7 +197,7 @@ Playing ability cards is what allows a character to perform **actions** in a sce
 
 ## Item Cards
 
-Item cards are acquired by spending gold in between scenarios or looting specific treasure tiles. All item cards a character equips will be placed below his or her character mat and can be used during a battle to augment his or her abilities. Item cards are not class-specific, so any character can use any item. However, characters are limited in the number of items they can **equip** (bring into a scenario). Each character can equip only one ![Head item](img/icons/items/head.png) item, one ![Body item](img/icons/items/body.png) item, one ![Legs item](img/icons/items/legs.png) item, up to two ![One Hand item](img/icons/items/one-hand.png) items **OR** one ![Two Hands item](img/icons/items/two-hands.png) item, and up to a number of ![Small item](img/icons/items/small-item.png) equal to half their level, rounded up. **Characters cannot own more than one copy of any item card.**
+Item cards are acquired by spending gold in between scenarios or looting specific treasure tiles. All item cards a character equips will be placed below his or her character mat and can be used during a battle to augment his or her abilities. Item cards are not class-specific, so any character can use any item. However, characters are limited in the number of items they can **equip** (bring into a scenario). Items looted from treasure chests can immediately be equipped and used, even if it puts you over the item slot limit. This is only for the remainder of the scenario, afterwards you must return you following the normal item limit. Each character can equip only one ![Head item](img/icons/items/head.png) item, one ![Body item](img/icons/items/body.png) item, one ![Legs item](img/icons/items/legs.png) item, up to two ![One Hand item](img/icons/items/one-hand.png) items **OR** one ![Two Hands item](img/icons/items/two-hands.png) item, and up to a number of ![Small item](img/icons/items/small-item.png) equal to half their level, rounded up. **Characters cannot own more than one copy of any item card.**
 
 ![Head item](img/icons/items/large/head.png) | ![Body item](img/icons/items/large/body.png) | ![Legs item](img/icons/items/large/legs.png) | ![One Hand item](img/icons/items/large/one-hand.png) | ![Two Hands item](img/icons/items/large/two-hands.png) | ![Small item](img/icons/items/large/small-item.png)
 -----|------|------|----------|-----------|-----------
@@ -482,7 +482,7 @@ Players can also use **any card they play** as an **“Attack 2”** action on t
 
 ![Jump](img/icons/general/jump.png) Some Move abilities are specified as a “Jump.” **Move X (Jump)** allows the character to ignore all figures and terrain effects during their movement. However, the last hex of a jump is still considered a normal movement, and so must obey the normal movement rules above.
 
-![Flying](img/icons/general/flying.png) Some figures may also have the **“Flying”** special trait. This allows figures to completely ignore any figures and terrain tiles during any part of their movement, including the last hex, except that they still must end their movement in an **unoccupied** hex (no figures present). This includes forced movement like PUSH or PULL. If a figure loses its Flying trait while occupying an obstacle hex, it takes damage as if it had sprung a damage trap and then moves immediately to the nearest **empty** hex (no figures, tokens, or overlay tiles of any kind present except corridors, pressure plates, and open doors).
+![Flying](img/icons/general/flying.png) Some figures may also have the **“Flying”** special trait. This allows figures to completely ignore any figures and terrain tiles during any part of their movement, including the last hex, except that they still must end their movement in an **unoccupied** hex (no figures present). This includes forced movement like PUSH or PULL. If a figure loses its Flying trait while occupying an obstacle hex, it takes damage as if it had sprung a damage trap and then moves immediately to the nearest **empty** hex (no figures, tokens, or overlay tiles of any kind present except money tokens, corridors, pressure plates, and open doors).
 
 #### REVEALING A ROOM
 
@@ -498,7 +498,7 @@ Once everything is placed in the new room, any present monster types without an 
 
 **Melee attacks** have no accompanying range value and are considered to have a default range of 1 hex, which means they typically target adjacent enemies.
 
-**Line-of-sight:** All ranged and melee attacks can only be performed against enemies within line-of-sight, which means that a line can be drawn from any corner of the attacker’s hex to any corner of the defender’s hex without touching any part of a wall (the line edge of a map tile or the entire area of any partial hex along the edge of a map tile, unless covered by an overlay tile). Only walls block line-of-sight. In addition, **any ability** which specifies a range can only be performed on a figure within line-of-sight. If a non-attack ability does not specify a range, then line-of-sight is not required. Also note that two hexes separated by a wall line are not considered adjacent, and range cannot be counted through walls.
+**Line-of-sight:** All ranged and melee attacks can only be performed against enemies within line-of-sight, which means that a line can be drawn from any point in the origin hex to any point in the target's hex without touching any part of a wall (the line edge of a map tile or the entire area of any partial hex along the edge of a map tile, unless covered by an overlay tile). Only walls block line-of-sight. In addition, **any ability** which specifies a range can only be performed on a figure within line-of-sight. If a non-attack ability does not specify a range, then line-of-sight is not required. Also note that two hexes separated by a wall line are not considered adjacent, and range cannot be counted through walls.
 
 ---
 **<p align="right"><a name="page20">Page 20</a></p>**
@@ -516,18 +516,15 @@ When attacking, the base attack value written on the card can be modified by thr
 
 Any damage suffered by a monster should be tracked on the stat sleeve in the section corresponding to the number on the specific monster’s standee. When a monster is brought to zero or fewer hit points by an attack or any source of damage, that monster immediately dies and is removed from the board. Any additional effects of an attack are not applied once a monster dies.
 
-**When a monster dies, a money token is also placed on the hex where it died if the monster was not summoned or spawned.**
+**When a monster dies, a money token is also placed on the hex where it died.**
 
 #### ADVANTAGE AND DISADVANTAGE
 
 Some attacks may have either **Advantage** or **Disadvantage**.
-
-- ![Advantage](img/rulebook/advantage.png)
   
-  An attacker with **Advantage** will draw two modifier cards from their deck and use whichever one is **better** (a). If one rolling modifier card was drawn, its effect is added to the other card played (b). If two rolling modifier cards were drawn, continue to draw cards until a rolling modifier is not drawn and then add together all drawn effects (c).
-- ![Disadvantage](img/rulebook/disadvantage.png)
+  An attacker with **Advantage** will draw two modifier cards from their deck and use whichever one is **better**. If your first draw with Advantage is a rolling modifier, continue drawing until a non-rolling modifier is drawn. Then, draw one more card, ignoring any rolling icon on this card. The last two cards drawn (the first non-rolling card and the one after it) are then compared. If the attack has Advantage, apply the effects of all initial rolling modifiers and the better of the last two cards. If your first draw with Advantage is not a rolling modifier but your second draw is, still ignore the rolling icon on that card. Additionally, in cases of ambiguity when attacking with Advantage, it is player choice rather than first-drawn.
 
-  An attacker with **Disadvantage** will draw two modifier cards from their deck and use whichever one is **worse** (d). Rolling modifiers are disregarded in the case of Disadvantage (e). If two rolling modifier cards were drawn, continue to draw cards until a rolling modifier is not played and then only apply the effect of the last card drawn (f).
+  An attacker with **Disadvantage** will draw two modifier cards from their deck and use whichever one is **worse**. If your first draw with Disadvantage is a rolling modifier, continue drawing until a non-rolling modifier is drawn. Then, draw one more card, ignoring any rolling icon on this card. The last two cards drawn (the first non-rolling card and the one after it) are then compared. If the attack has Disadvantage, ignore all initial rolling modifiers and apply whichever of the last two cards is worse. If your first draw with Disadvantage is not a rolling modifier but your second draw is, still ignore the rolling icon on that card.
 
 ---
 **<p align="right"><a name="page21">Page 21</a></p>**
@@ -567,9 +564,9 @@ Note also that as long as an attack does not specify range, it is considered mel
 
 Attack abilities will often have effects that increase their power. If an attack effect is listed on an ability card after an attack, the target (or targets) of the attack is subject to the additional effect as well, after damage from the attack is resolved. **Attack effects are applied regardless of whether the corresponding attack does damage.** These effects (except experience gains) are optional and can be skipped. Some character actions can also apply these effects without an attack, and in such cases the target of the effect is written on the ability card.
 
-![Push](img/icons/status/push.png) **PUSH X** – The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must place the target **farther away from** the attacker than it was previously. If there are no viable hexes into which to push the target, the push ends. The target can be pushed through its allies, but not its enemies.
+![Push](img/icons/status/push.png) **PUSH X** – The target is forced to move up to X hexes in a direction specified by the attacker, but each hex moved must place the target **farther away from** the attacker than it was previously. If there are no viable hexes into which to push the target, the push ends. The target can be pushed through its allies, but not its enemies. When a monster pushes, it will push the full amount possible.
 
-![Pull](img/icons/status/pull.png) **PULL X** – The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must place the target **closer to** the attacker than it was previously. If there are no viable hexes into which to pull the target, the pull ends. The target can be pulled through its allies, but not its enemies. Both push and pull effects are considered movements, however, they are not affected by difficult terrain.
+![Pull](img/icons/status/pull.png) **PULL X** – The target is forced to move up to X hexes in a direction specified by the attacker, but each hex moved must place the target **closer to** the attacker than it was previously. If there are no viable hexes into which to pull the target, the pull ends. The target can be pulled through its allies, but not its enemies. Both push and pull effects are considered movements, however, they are not affected by difficult terrain. When a monster pushes, it will push the full amount possible.
 
 ![Pierce](img/icons/status/pierce.png) **PIERCE X** – Up to X points of the target’s Shield are ignored for the attack. Unlike other effects, PIERCE is applied while calculating the accompanying attack damage instead of afterwards.
 
@@ -604,7 +601,7 @@ The following are **negative conditions**. If an ability has the name of one of 
 
 The following are **positive conditions**. Figures can apply positive conditions to themselves or allies through specific actions. Positive conditions cannot be prematurely removed.
 
-![Invisible](img/icons/status/invisible.png) **INVISIBLE** – If a figure is invisible, it cannot be focused on or targeted by an enemy. Invisibility does not affect a figure’s interactions with his or her allies. At the end of its next turn, the INVISIBLE token is removed. Monsters treat invisible characters exactly as if they were obstacles.
+![Invisible](img/icons/status/invisible.png) **INVISIBLE** – If a figure is invisible, it cannot be focused on or targeted by an enemy. Invisibility does not affect a figure’s interactions with his or her allies. At the end of its next turn, the INVISIBLE token is removed. Figures can move through (but not stop on) invisible enemies.
 
 ![Strengthen](img/icons/status/strengthen.png) **STRENGTHEN** – If a figure is strengthened, it gains Advantage on all of its attacks. At the end of its next turn, the STRENGTHEN token is removed.
 
@@ -687,7 +684,7 @@ Some abilities summon other ally figures to the board. Summoned figures (summons
 
 Summons have basic statistics for hit points, attack value, move value, and range value along with any special traits written on the ability card. A summon is considered a persistent bonus (the card is placed in the active area) until either the summon loses all its hit points, its corresponding ability card is removed from the active area, or the summoner becomes exhausted, at which point the summon is removed from the board.
 
-A summon’s turn in the initiative order is always **directly before the character who summoned it**, and is separate from that character’s turn. Summons are not controlled by the summoning player, but instead obey automated monster rules, permanently following the ability card **“Move+0, Attack+0”** (see Monster Turn on pp. 29–32 for details) and using the player’s attack modifier deck to perform its attacks.
+A summon’s turn in the initiative order is always **directly before the character who summoned it**, and is separate from that character’s turn. Summons are not controlled by the summoning player, but instead obey automated monster rules, permanently following the ability card **“Move+0, Attack+0”** (see Monster Turn on pp. 29–32 for details) and using the player’s attack modifier deck to perform its attacks. If a summon cannot find focus, the summoner may choose to have the summon focus on the summoner as if performing a "Move +0" ability for the turn (thus, when a summon absolutely has no way of finding focus, you may choose to have the summon move towards you - the summoner - for the round).
 
 A player can have multiple different summon abilities in play at once, in which case they act in the order in which they were summoned. Summoned figures **never** take a turn in the round they are summoned. Summon kills are credited to the owner of the summon.
 
@@ -836,8 +833,7 @@ Monster attacks function exactly like character attacks, and are modified by the
 
 **Healing:** Monster healing functions exactly like character healing as discussed on p. 26. With a “Heal X” ability, the monster will heal themselves or an ally within the specified range, whichever has lost the most hit points.
 
-**Summons:** Monster summon abilities place new monsters on the board that behave exactly like the normal monsters, acting according to played monster ability cards of their type. Summoned monsters are placed in an empty hex adjacent to the summoning monster and also as close to an enemy as possible. If there are no empty adjacent hexes or there are no available standees of the summoned monster type, the summon fails. Summoned monsters never act on the round they are summoned, nor do they drop money tokens when killed.
-
+**Summons:** Monster summon abilities place new monsters on the board that behave exactly like the normal monsters, acting according to played monster ability cards of their type. Summoned monsters are placed in an empty hex adjacent to the summoning monster and also as close to an enemy as possible. If there are no empty adjacent hexes or there are no available standees of the summoned monster type, the summon fails. Summoned monsters never act on the round they are summoned.
 ---
 **<p align="right"><a name="page32">Page 32</a></p>**
 
